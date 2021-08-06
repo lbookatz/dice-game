@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+    <title>Dice Game 1 Player</title>
+</head>
+<body>    
+    <div id="heading">
+        <p id="title">This is a 2 player dice game: </p>
+        <p>1 - roll the Dice </p>
+        <p>2 - save the score with the hold button</p>
+        <p>3 - if you roll a 1 you score nothing that round</p>
+    </div>
+    
+    <div id="main">
+        <div id="players">
+            <div class="player" id="containerP1">
+                <!-- Win or loose display -->
+                <div class="box" id="playerP1">Player 1</div>
+                <!-- the total score -->
+                <div class="box start"  id="totalScoreP1">0</div> 
+                <!-- The current score -->
+                <div class="box start current"  id="currentScoreP1">0</div>     
+            </div>
+            <div class="player" id="containerP2">
+                <!-- Win or loose display -->
+                <div class="box" id="playerP2">Player 2</div>
+                <!-- the totalscore -->
+                <div class="box start"  id="totalScoreP2">0</div>
+                <!-- The current score -->
+                <div class="box start current"  id="currentScoreP2">0</div> 
+               
+            </div>            
+        </div>
+
+        <div id="playerButtons">         
+            <!-- Start game Again-->
+            <button class="box"  id="startAgain">Start Again</button>
+            <!-- dice img -->
+            <div class="box"  id="imageOfDice"></img></div>
+            <!-- roll dice -->
+            <button class="box"  id="rollDice">Roll Dice</button>   
+            <!-- Hold dice -->
+            <br><button class="box"  id="hold">Hold</button>         
+        </div>
+    </div>  
+    <!-- total to win game -->
+    <div class="box" id="changeScore" >
+        <div>Number of rolls needed to win (This number is editable)</div>
+        <div id="scoreToWin">20</div>
+        <div id="notInt"></div>
+    </div>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

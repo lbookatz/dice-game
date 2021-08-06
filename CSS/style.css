@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+
+body {
+    color: green;
+    font-size: 36px;
+    text-align: center;
+}
+#heading{
+    width: 100px;
+    margin: auto;
+    width: 40%;
+    border: 1px solid #92ec13;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#heading p#title{
+    text-align:center;
+}
+
+#heading p{
+    font-size: 16px;
+}
+
+#main{    
+   display: flex; 
+   /* display: inline; */
+   /* position: relative; */
+   justify-content: center;
+   align-items: flex-end;   
+}
+
+#players{
+    display:flex;
+    min-height: 300px;
+    min-width: 600px;    
+}
+
+#playerP2{
+    opacity: 0.2;
+}
+
+#playerButtons{
+    position: absolute;
+    /* display: inline; */
+    /* bottom:250px; */
+    /* position: absolute; */
+    padding-bottom: 10px;
+}
+
+#dice{
+    height: 75px;
+    width: 75px;
+}
+
+#imageOfDice{
+    height: 85px;
+}
+
+.box{
+    padding: 10px;
+}
+
+#containerP1{
+    background-color: orange;
+} 
+#containerP2  {   
+    background-color: purple;
+}
+
+.player{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.current::before{
+    content:"Current\A";
+    font-size: 20px;
+    /* vertical-align: top; */
+
+}
+
+.current {
+    background-color: blanchedalmond;
+    height: 60px ;
+    width: 70px;
+    vertical-align: top;
+    padding:0;
+    font-size: 24px;
+}
+
+#changeScore{
+    font-size: 14px;
+}
+
